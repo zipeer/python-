@@ -1,0 +1,34 @@
+面向对象和Java类似
+              dir 内置函数
+              定义简单的类（只包含方法）
+              方法中的 self 参数
+              初始化方法
+              内置方法和属性
+
+部分代码：
+
+class Cat():
+
+    def eat(self):
+        print("小猫爱吃鱼")
+
+    def drink(self):
+        print("小猫爱喝水")
+
+tom = Cat()
+
+tom.eat()
+tom.drink()
+
+print(dir(Cat))# dir查看内置函数，小技巧
+print(tom)# 直接输出对象tom的地址
+
+addr = id(tom)
+print("%x" % addr)
+print(tom)
+
+lazy_cat = Cat()
+
+lazy_cat.eat()
+lazy_cat.drink()# 这两个对象的地址不同
+print(lazy_cat)
